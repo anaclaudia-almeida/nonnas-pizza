@@ -326,8 +326,8 @@ html {
   position: fixed;
   left: 50%;
   top: 50%;
-  height: 400px;
-  max-width: 90%;
+  height: 500px;
+  width: 500px;
   z-index: 10;
   transform: translate(-50%, -50%);
   padding: 1.2rem;
@@ -363,6 +363,10 @@ html {
   background-color: #EC7E18;
 }
 
+.conteudo-modal {
+  margin-bottom: 0.5rem;
+}
+
 .conteudo-modal h3 {
   color: #1F1E1f;
   font-size: 1.6rem;
@@ -378,6 +382,7 @@ html {
   font-size: 1.6rem;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   font-weight: 250;
 }
 
@@ -386,9 +391,27 @@ html {
 }
 
 .conteudo-modal img {
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.footer-modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
-  height: 190px;
-  margin: 0;
+}
+
+.footer-modal h4 {
+  font-size: 1.6rem;
+}
+
+.footer-modal select {
+  font-size: 1.6rem;
 }
 
 #modal.hide, #fade.hide {
@@ -408,6 +431,7 @@ html {
 .carrinho button {
   height: 3rem;
   width: 20rem;
+  margin-top: 4rem;
   border: none;
   border-radius: 0.5rem;
   background-color: #9c9696;

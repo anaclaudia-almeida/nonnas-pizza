@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./src/images/nonnaslogo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="/src/css/style-checkout.css">
+  <link rel="stylesheet" href="./src/css/responsive-checkout.css">
+
+  <title>Checkout - Nonna's Pizza</title>
+</head>
+<body>
+  <header class="topo-do-site">
+    <div class="logo">
+      <a href="./index.html"><img src="./src/images/nonnaslogo.png" alt="logotipo da nonna's pizzaria"></a>
+    </div>
+    Nonna's Pizza
+  </header>
+  <main>
+
+    <div class="page-title">Seu carrinho</div>
+    <div class="content">
+      <section>
+        <table>
+          <thead>
+            <tr>
+              <th>Produto</th>
+              <th>Preço</th>
+              <th>Qtde</th>
+              <th>Total</th>
+              <!--<th>-</th>-->
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+            <td>
+              <div class="produto">
+                <img src="./src/images/pizza-com-queijo-e-tomate.jpg" alt="">
+                <div class="informacoes">
+                  <div class="nome-do-produto">Queijo com Tomate</div>
+                  <div class="categoria">4 pedaços</div>
+                </div>
+              </div>
+            </td>
+            <td class="preco">R$ 28</td>
+            <td>
+              <div class="qtde">
+                <button><i class="bi bi-dash"></i></button>
+                <span>2</span>
+                <button><i class="bi bi-plus"></i></button>
+              </div>
+            </td>
+            <td class="preco">R$ 56</td>
+            <td><button class="fechar"><i class="bi bi-x-circle"></i></button>
+            </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <aside>
+        <div class="box">
+          <header>Resumo do Pedido</header>
+          <div class="info">
+            <div><span>Subtotal</span><span>R$ 56,00</span></div>
+            <div><span>Frete Fixo</span><span>R$ 15,00</span></div>
+            <div><button class="adicionar-cupom">Adicionar cupom de desconto <i class="bi bi-arrow-right-square"></i></button></div>
+          </div>
+          <footer><div>Total Pedido:</div><span>R$ 71,00</span></footer>
+        </div>
+        <button class="finalizar-compra">Finalizar Compra</button>
+      </aside>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Dosis", sans-serif;
+}
+
+.topo-do-site {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.topo-do-site .logo img {
+  width: 90px;
+}
+
+body {
+  background-color: #f7f4f4e5;
+}
+
+body > header {
+  background-color: #EC7E18;
+  color: #fff;
+  font-size: 20px;
+  padding: 20px 0;
+  font-size: 1.5rem;
+
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  background-color: #fff;
+}
+
+main .page-title {
+  font-size: 2rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+main .content {
+  display: flex;
+  padding: 3rem;
+
+}
+
+main aside {
+  background-color: #f7f4f4e5;
+  min-width: 250px;
+}
+
+main section {
+  flex: 1;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table thead tr {
+  border-bottom: 0.1rem solid #EC7E18;
+}
+
+table thead tr th {
+  text-align: left;
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+  color: dimgray;
+  font-size: 0.9rem;
+}
+
+table tbody {
+  text-align: left;
+}
+
+table tbody tr td {
+  padding: 20px 0;
+  /*border-bottom: 0.1rem solid #EC7E18;*/
+}
+
+.produto {
+  display: flex;
+  align-items: center;
+}
+
+.produto .informacoes {
+  margin-left: 2rem;
+}
+
+.produto img {
+  border-radius: 0.3rem;
+  width: 5rem;
+}
+
+.produto .nome-do-produto {
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.produto .categoria {
+  font-size: 0.9rem;
+}
+
+.qtde {
+  background-color: rgb(231, 229, 229);
+  min-width: 4rem;
+  border-radius: 3rem;
+  font-size: 1rem;
+  height: 1rem;
+  overflow: hidden;
+  padding: 0;
+
+
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.qtde button {
+  background: transparent;
+  border: 0;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  height: 100%;
+}
+
+.qtde button:hover {
+  background-color: rgb(198, 195, 195);
+
+}
+
+span {
+  margin: 0 0.5rem;
+  font-size: 0.9rem;
+}
+
+.fechar {
+  border: none;
+  font-size: 1rem;
+  background: transparent;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+aside .box {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+aside header {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
+
+}
+
+aside .info {
+  margin-top: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+aside .adicionar-cupom {
+  width: 100%;
+  border: none;
+  border-radius: 0.3rem;
+  height: 1.5rem;
+  width: 15rem;
+  color: #EC7E18;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+aside .finalizar-compra {
+  width: 100%;
+  background-color: #EC7E18;
+  border: none;
+  border-radius: 0.3rem;
+  height: 3rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+aside .finalizar-compra:hover {
+  background-color: #ec7e18d7;
+  color: #ffffff;
+}
+
+footer {
+  margin-top: 1rem;
+
+  display: flex;
+  justify-content: space-around;
+  font-weight: 500;
+}
