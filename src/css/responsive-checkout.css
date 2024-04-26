@@ -4,12 +4,14 @@
 
 main {
   width: 100%;
-  height: 250px;
+  height: 240px;
 }  
 
 main aside {
+  margin-top: 350px;
+  transform: translate(-50%, -50%);
+  left: 50%;
   position: absolute;
-  margin-top: 200px;
 }
 
 * {
@@ -35,7 +37,7 @@ body > header {
   background-color: #EC7E18;
   color: #fff;
   font-size: 20px;
-  padding: 20px 0;
+  padding: 10px 0;
   font-size: 1rem;
 
   display: flex;
@@ -54,13 +56,12 @@ main .page-title {
 
 main .content {
   display: flex;
-  padding: 1rem;
+  padding: 0.4rem;
 
 }
 
 main aside {
   background-color: #f7f4f4e5;
-  min-width: 150px;
   padding: 0;
 }
 
@@ -77,11 +78,11 @@ table thead tr {
 }
 
 table thead tr th {
-  text-align: left;
+  text-align: center;
   padding-bottom: 1rem;
   text-transform: uppercase;
   color: dimgray;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
 
 }
 
@@ -90,17 +91,19 @@ table tbody {
 }
 
 table tbody tr td {
-  padding: 20px 0;
+  padding: 40px 0;
   /*border-bottom: 0.1rem solid #EC7E18;*/
 }
 
 .produto {
   display: flex;
+  justify-content: stretch;
   align-items: center;
+  text-align: left;
 }
 
 .produto .informacoes {
-  margin-left: 2rem;
+  margin-left: 0.5rem;
 }
 
 .produto img {
@@ -114,7 +117,7 @@ table tbody tr td {
 }
 
 .produto .categoria {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 
 .qtde {
@@ -136,7 +139,7 @@ table tbody tr td {
 .qtde button {
   background: transparent;
   border: 0;
-  font-size: 1rem;
+  font-size: 0.8rem;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -165,21 +168,21 @@ span {
 }
 
 .preco {
-  font-size: 0.6rem;
+  font-size: 1rem;
 }
 
 aside {
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  margin-left: 0;
 }
 
 aside .box {
   margin-top: 0;
   text-align: center;
+  width: 100%;
 }
 
 aside header {
@@ -189,10 +192,12 @@ aside header {
 }
 
 aside .info {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  gap: 1rem;
+  justify-content: space-between;
+  gap: 0.5rem;
+  font-size: 2rem;
 }
 
 aside .adicionar-cupom {
@@ -206,6 +211,8 @@ aside .adicionar-cupom {
   font-size: 0.8rem;
   cursor: pointer;
   background-color: transparent;
+  font-weight: 500;
+  margin-bottom: 1rem;
 }
 
 aside .finalizar-compra {
